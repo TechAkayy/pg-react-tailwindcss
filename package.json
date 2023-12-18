@@ -1,0 +1,57 @@
+{
+  "name": "pg-react-tailwindcss",
+  "version": "0.0.0",
+  "homepage": "https://pg-react-tailwindcss.netlify.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pinegrow/pg-react-tailwindcss.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "now": "npm run build && npm run preview",
+    "lighthouse:dev": "npx unlighthouse --no-cache --site http://localhost:5173",
+    "lighthouse": "npx unlighthouse --no-cache --site https://pg-vue-tailwindcss.netlify.app",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "npm run lint:fix && npm run format",
+    "lint:fix": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format": "prettier --write . !public"
+  },
+  "dependencies": {
+    "defu": "^6.1.2",
+    "lite-youtube-embed": "^0.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vue": "^3.3.12"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.51",
+    "@pinegrow/tailwindcss-plugin": "^3.0.18",
+    "@pinegrow/vite-plugin": "^3.0.34",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/node": "^20.5.0",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@unocss/preset-icons": "^0.57.2",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "npm-run-all": "^4.1.5",
+    "ofetch": "^1.0.1",
+    "postcss": "^8.4.22",
+    "prettier": "^2.8.4",
+    "tailwindcss": "^3.3.1",
+    "typescript": "^5.2.2",
+    "unocss": "^0.57.2",
+    "unplugin-auto-import": "^0.16.6",
+    "vite": "^5.0.8"
+  },
+  "web-types": "web-types.json"
+}
